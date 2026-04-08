@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NFL offense vs defense correlation — Python analytics and interactive HTML visualization." />
+  <title>NFL Offense vs. Defense Correlation | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">🏈</span>
+      <span class="project-badge">Analytics</span>
+    </div>
+    <h1 class="project-title">NFL Offense vs. Defense Correlation</h1>
+    <p class="project-lead">
+      Statistical exploration of how team offensive and defensive performance metrics move together,
+      backed by Python processing and a browser-based chart layer for league-wide comparison.
+    </p>
+    <div class="project-actions">
+      <a href="https://github.com/lukesahlin/nfl-offense-vs-defense-correlation" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-outline">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Approach</h2>
+      <p>
+        Sports stats are noisy: strength of schedule, injuries, and sample size all matter. This project
+        focuses on transparent correlation structure—what pairs of team metrics co-vary and how that
+        shows up when you scan the whole league.
+      </p>
+      <h2>Components</h2>
+      <ul>
+        <li>Python ingestion and cleaning of team-level offensive and defensive statistics.</li>
+        <li>Correlation summaries to guide which relationships are worth visual emphasis.</li>
+        <li>Interactive HTML/JavaScript visualization to filter and compare teams without rerunning notebooks.</li>
+      </ul>
+      <h2>Outcome</h2>
+      <p>
+        A compact example of the analytics pattern I like: reproducible backend, lightweight frontend,
+        and a narrative grounded in the actual distributions behind the averages.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">JavaScript</span>
+    </div>
+    <p class="project-footer-note"><a href="../index.html#contact">Say hello</a> if you work in sports data.</p>
+  </article>
+</body>
+</html>

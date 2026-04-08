@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Three Classical Ciphers — Caesar, Vigenère, and one-time pad in Python with tests and documentation." />
+  <title>Three Classical Ciphers | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">🔐</span>
+      <span class="project-badge">Security</span>
+    </div>
+    <h1 class="project-title">Three Classical Ciphers</h1>
+    <p class="project-lead">
+      Readable Python implementations of Caesar, Vigenère, and one-time pad encryption—aimed at understanding
+      classical constructions before modern primitives and protocols.
+    </p>
+    <div class="project-actions">
+      <a href="https://github.com/lukesahlin/three-classical-ciphers" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-outline">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Scope</h2>
+      <p>
+        Each cipher is implemented as its own small module with clear boundaries: key handling, encryption,
+        decryption, and edge cases like non-alphabetic characters or key reuse (where pedagogically relevant).
+      </p>
+      <h2>Quality bar</h2>
+      <ul>
+        <li>Unit tests covering round-trips, rotated alphabets, and failure modes.</li>
+        <li>Design notes on why these schemes are obsolete for real secrecy—and what attacks target them.</li>
+        <li>Demonstrations suitable for walkthroughs or coursework presentation.</li>
+      </ul>
+      <h2>Why classical crypto still matters</h2>
+      <p>
+        Modern cryptography builds on formal definitions and proofs; classical ciphers are where many people
+        first meet keys, entropy, and the difference between obscurity and security. This repo is my structured
+        tour through that foundation.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Cryptography</span>
+      <span class="tech-tag">Unit Testing</span>
+    </div>
+    <p class="project-footer-note"><a href="../index.html#contact">Contact</a> about security-focused internships or roles.</p>
+  </article>
+</body>
+</html>

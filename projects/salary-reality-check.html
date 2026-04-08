@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salary Reality Check — scrollytelling viz for real purchasing power across U.S. cities." />
+  <title>Salary Reality Check | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">💰</span>
+      <span class="project-badge">Data viz</span>
+    </div>
+    <h1 class="project-title">Salary Reality Check</h1>
+    <p class="project-lead">
+      An interactive, scroll-driven story that compares what a salary actually buys in different cities
+      after taxes, rent, and cost-of-living—not just nominal dollars.
+    </p>
+    <div class="project-actions">
+      <a href="https://lukesahlin.github.io/Salary-Reality-Check/" class="btn btn-primary" target="_blank" rel="noopener">Live demo</a>
+      <a href="https://github.com/lukesahlin/Salary-Reality-Check" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-outline">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Idea</h2>
+      <p>
+        Job posts advertise the same number everywhere, but purchasing power is local. This project makes that
+        concrete across fifty U.S. cities using public wage, rent, and tax logic so users can reason about
+        tradeoffs without spreadsheets.
+      </p>
+      <h2>Implementation</h2>
+      <ul>
+        <li>React 18 and Vite for a fast, component-driven UI.</li>
+        <li>D3.js for bespoke charts and scrollytelling transitions tied to narrative steps.</li>
+        <li>Tailwind CSS for consistent spacing and responsive layout.</li>
+        <li>Python tooling in the repo for data prep (BLS wages, Zillow rent index, tax calculations).</li>
+        <li>Shareable state via URL parameters so a specific city comparison can be linked.</li>
+      </ul>
+      <h2>Takeaway</h2>
+      <p>
+        Good data journalism is accurate and inviting: the math has to hold up, and the interface has to
+        reward curiosity without overwhelming readers.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">React 18</span>
+      <span class="tech-tag">D3.js</span>
+      <span class="tech-tag">Vite</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">Python</span>
+    </div>
+    <p class="project-footer-note"><a href="../index.html#contact">Get in touch</a> about data storytelling work.</p>
+  </article>
+</body>
+</html>

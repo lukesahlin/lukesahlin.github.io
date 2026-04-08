@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Options Flow Analytics — ES futures and SPX options MBO data, DuckDB, FastAPI, React, Plotly." />
+  <title>Options Flow Analytics Dashboard | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">📈</span>
+      <span class="project-badge">Full-stack</span>
+    </div>
+    <h1 class="project-title">Options Flow Analytics Dashboard</h1>
+    <p class="project-lead">
+      A financial analytics stack that ingests market-by-order options and futures data, surfaces
+      institutional-style signals, and pairs a fast analytic backend with an interactive React frontend.
+    </p>
+    <div class="project-actions">
+      <a href="https://lukesahlin.github.io/loaded_lob_project/" class="btn btn-primary" target="_blank" rel="noopener">Live dashboard</a>
+      <a href="https://github.com/lukesahlin/loaded_lob_project" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-outline">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Problem</h2>
+      <p>
+        Raw options and ES futures MBO feeds are enormous. The interesting story is rarely a single print—it’s
+        how liquidity pulls and stacks around strikes and expiries, and how that relates to greeks and positioning.
+      </p>
+      <h2>What I built</h2>
+      <ul>
+        <li>Ingestion and analysis pipelines using Polars and PyArrow for columnar performance.</li>
+        <li>DuckDB for ad-hoc SQL over large extracts without standing up a heavy warehouse.</li>
+        <li>FastAPI services to serve curated datasets and queries to the UI.</li>
+        <li>React 18 frontend with Plotly.js— including 3D greeks surfaces for intuitive exploration.</li>
+        <li>Detection heuristics for pulling/stacking-style behavior to highlight unusual flow.</li>
+        <li>Static deployment on GitHub Pages with CI/CD for repeatable builds.</li>
+      </ul>
+      <h2>Why it matters</h2>
+      <p>
+        This project brings together systems thinking (data volume, API contracts) and visualization:
+        analysts need both trustworthy aggregates and a UI that does not get in the way.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">React 18</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">DuckDB</span>
+      <span class="tech-tag">Plotly.js</span>
+      <span class="tech-tag">Polars</span>
+      <span class="tech-tag">PyArrow</span>
+    </div>
+    <p class="project-footer-note"><a href="../index.html#contact">Reach out</a> if you want to talk markets tech.</p>
+  </article>
+</body>
+</html>

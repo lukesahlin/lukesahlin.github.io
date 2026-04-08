@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Air Quality Dashboard for Spokane — senior capstone with FastAPI, React, PostgreSQL, Docker, and RBAC." />
+  <title>Air Quality Dashboard — Spokane | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">🌫️</span>
+      <span class="project-badge">Capstone</span>
+    </div>
+    <h1 class="project-title">Air Quality Dashboard — Spokane</h1>
+    <p class="project-lead">
+      A production-oriented platform for environmental stakeholders to manage air-quality sensors,
+      sites, and users, with automated anomaly detection and secure multi-role access.
+    </p>
+    <div class="project-actions">
+      <a href="https://github.com/lukesahlin" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html#projects" class="btn btn-outline">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Context</h2>
+      <p>
+        This project is my senior capstone (CPSC 491/492) in partnership with Gonzaga University’s
+        Institute for Climate, Water, and the Environment. The goal is to give Spokane and partner
+        organizations a trustworthy place to monitor sensor health and air-quality readings—not
+        just static charts, but operations tooling for the people maintaining the network.
+      </p>
+      <h2>What I built</h2>
+      <ul>
+        <li>Full-stack admin experience for sensors, deployment sites, and user accounts.</li>
+        <li>Real-time and historical data pathways with variance-based logic to flag suspicious sensor behavior.</li>
+        <li>Containerized deployment with Docker for repeatable environments across development and demo.</li>
+        <li>Role-based access control so admins, operators, and read-only stakeholders see only what they should.</li>
+      </ul>
+      <h2>Outcome</h2>
+      <p>
+        The stack mirrors how small teams ship real software: a typed API layer, a modern frontend,
+        PostgreSQL for integrity, and security baked into auth and authorization—not bolted on at the end.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">RBAC</span>
+    </div>
+    <p class="project-footer-note">Questions about the capstone? <a href="../index.html#contact">Contact me</a>.</p>
+  </article>
+</body>
+</html>

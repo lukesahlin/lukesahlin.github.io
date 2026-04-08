@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Event Management System Database — PostgreSQL schema for events, attendees, vendors, and access control." />
+  <title>Event Management System Database | Luke Sahlin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../project-page.css" />
+</head>
+<body>
+  <nav class="project-topnav" aria-label="Project">
+    <div class="project-topnav-inner">
+      <a href="../index.html" class="project-brand">Luke<span>.</span></a>
+      <a href="../index.html#projects" class="project-back">← All projects</a>
+    </div>
+  </nav>
+  <article class="project-wrap">
+    <div class="project-badge-row">
+      <span class="project-icon-big" aria-hidden="true">🗃️</span>
+      <span class="project-badge">Database</span>
+    </div>
+    <h1 class="project-title">Event Management System Database</h1>
+    <p class="project-lead">
+      A normalized PostgreSQL design for organizations that run recurring events: registrations, venue capacity,
+      vendor relationships, and staff responsibilities—modeled with integrity constraints and role-aware access patterns.
+    </p>
+    <div class="project-actions">
+      <a href="../index.html#projects" class="btn btn-primary">Back to portfolio</a>
+    </div>
+    <div class="project-prose">
+      <h2>Requirements</h2>
+      <p>
+        Event operations generate competing priorities: marketing wants flexibility, finance wants auditability,
+        and on-site teams need truth about headcount and assignments. The schema reflects those tensions explicitly.
+      </p>
+      <h2>Design choices</h2>
+      <ul>
+        <li>Third-normal-form core tables for events, sessions, attendees, vendors, and staff.</li>
+        <li>Referential integrity and check constraints to prevent orphan registrations or double-booked resources.</li>
+        <li>Role-based access patterns aligned with planners, finance readers, and vendors with scoped visibility.</li>
+        <li>Indexing strategy notes for high-read paths (sign-in lookups, schedule boards).</li>
+      </ul>
+      <h2>Course context</h2>
+      <p>
+        Developed as part of database coursework: ER modeling through migrations, with emphasis on documenting
+        assumptions and tradeoffs for future engineers—not just tables on a diagram.
+      </p>
+    </div>
+    <div class="project-tech" aria-label="Technologies">
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Database Design</span>
+      <span class="tech-tag">Access Control</span>
+    </div>
+    <p class="project-footer-note"><a href="../index.html#contact">Contact me</a> for a walkthrough of the ERD and queries.</p>
+  </article>
+</body>
+</html>
